@@ -25,7 +25,7 @@ const callback = (err) => {
 
 The callback in a function is usually the last parameter.  The arguments that are passed to the callback function are variadic.  However, every callback has as the first parameter an error object.  Determining if a piece of code has generated an error is done by comparing the error object to a truthy value.   
 
-In the example below, the callback function is an anonymous function that is called when the function hs completed.  The result is either an error, or the file object is populated with information(data).
+In the example below, the callback function is an anonymous function that is called when the function has completed.  The result is either an error, or the file object is populated with information(data).
 
 ```js
 import FS from 'fs';
@@ -39,7 +39,7 @@ FS.readFile('somepath', {}, (err, file) => {
 
 ### Defining a callback
 
-Defining a callback as a parameter in a function we create is simple.  Take for example this formatting function.
+Defining a callback as a parameter in a function is simple.  Take for example this formatting function.
 
 ```js
 const format = (message = '', callback) => {
